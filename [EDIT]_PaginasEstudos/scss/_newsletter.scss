@@ -1,0 +1,53 @@
+.newsletter{
+    height:500px;
+    width:80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: whitesmoke;
+
+    .wrap{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: auto;
+        color: black; 
+  
+        h1{
+          font-family: $primary-font;
+          font-size: 40px;;
+          text-transform: uppercase;
+          line-height: 50px;
+        }
+  
+        p{
+          font-family: $secondary-font;
+          color: $color-type;
+          font-size: 15px;
+          line-height: 40px;
+        }
+
+        .blankEmail{
+            width: 60%;
+            padding: 15px 20px;
+            margin: 8px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .buttonAdd{
+            width: 10%;
+            padding: 15px 20px;
+            margin: 8px 0;
+            background-color: orange;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            
+        }
+    }
+}
