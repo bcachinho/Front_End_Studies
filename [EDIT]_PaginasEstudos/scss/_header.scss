@@ -53,14 +53,26 @@
             }
 
             .searchPlaceOpen{
-                width: 100px;
-                height: 40px;
+                width: 200px;
+                line-height: 40px;
+                font-size: 15px;
+                padding-left: 5px;
+
             }
     
             .searchButton{
                 background-color: Transparent;
                 width: 40px;
                 height: 40px;
+                margin-right: -20px;
+                font-size: 20px;
+            }  
+
+            .searchButtonOpen{
+                background-color: gray;
+                color: white;
+                width: 40px;
+                line-height: 40px;
                 margin-right: -20px;
                 font-size: 20px;
             }  

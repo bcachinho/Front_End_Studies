@@ -7,6 +7,46 @@ $background-color-elements: #ffffff;
 $color-type: #606060;
 $color-type-secondary:#999999;
 
+/* Mixing SmallerValue*/
+@mixin mq($smallerValue,$biggerValue) {
+    @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+      @content;
+    }
+}
+
+/* Title */
+@mixin maintitle-content(){
+    font-family: $primary-font;
+    color: $color-type;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Title com Extents */
+%maintitle-content {
+    font-family: $primary-font;
+    color: $color-type;
+    font-size: 24px;
+    text-align: center;
+
+    @include mq(0,340){
+     font-size: 14px;
+    }
+}
+
+%subtitle-breadcrumbs{
+    font-family: $secondary-font;
+    list-style-type: none;
+    color: $color-type-secondary;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: left;
+
+    @include mq(0,340){
+        font-size: 10px;
+       }
+}
 
 .btn{
     border: 2px solid $color-type-secondary;
@@ -25,8 +65,3 @@ $color-type-secondary:#999999;
     }
 }
 
-@mixin mq($smallerValue,$biggerValue) {
-    @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
-      @content;
-    }
-}

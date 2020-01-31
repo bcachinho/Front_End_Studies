@@ -59,6 +59,9 @@ table {
 
 /* Fonts */
 /* Colors */
+/* Mixing SmallerValue*/
+/* Title */
+/* Title com Extents */
 .btn {
   border: 2px solid #999999;
   text-decoration: none;
@@ -135,14 +138,25 @@ header nav .searchPlace {
 }
 
 header nav .searchPlaceOpen {
-  width: 100px;
-  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
 }
 
 header nav .searchButton {
   background-color: Transparent;
   width: 40px;
   height: 40px;
+  margin-right: -20px;
+  font-size: 20px;
+}
+
+header nav .searchButtonOpen {
+  background-color: gray;
+  color: white;
+  width: 40px;
+  line-height: 40px;
   margin-right: -20px;
   font-size: 20px;
 }
@@ -427,6 +441,30 @@ footer .wrap .col:last-child {
 .grid .wrapper .col .itemN.links p a.priceValue {
   font-style: italic;
   font-size: 15px;
+}
+
+.grid_products {
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.grid_products .breadcrumb {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid_products .breadcrumb li {
+  display: inline;
+}
+
+.grid_products .breadcrumb li a {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: gray;
 }
 
 .newsletter {

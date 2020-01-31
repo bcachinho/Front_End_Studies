@@ -1,0 +1,22 @@
+.grid_products{
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: white;
+
+    .breadcrumb{
+        @extend subtitle-breadcrumbs;
+        
+
+        li{
+            display: inline;
+
+            a{
+                text-align: center;
+                font-family: $primary-font;
+                font-size: 18px;
+                color: gray;
+            }
+        }
+    }
+}
