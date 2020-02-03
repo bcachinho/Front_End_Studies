@@ -9,6 +9,39 @@
 	var	$window = $(window),
 		$body = $('body');
 
+	//Function Validate
+	$("#form_search").validate({
+		rules : {
+			  nome:{
+					 required:true,
+					 minlength:3
+			  },
+			  dateinitial:{
+				  	 date: true,
+					 required:true
+			  },
+			  datefinal:{
+				  	 date: true,
+					 required:true
+			  }                                
+		},
+		messages:{
+			  nome:{
+					 required:"Por favor, informe seu nome",
+					 minlength:"O nome deve ter pelo menos 3 caracteres"
+			  },
+			  email:{
+					 required:"É necessário informar um email"
+			  },
+			  mensagem:{
+					 required:"A mensagem não pode ficar em branco"
+			  }     
+		}
+ });
+ 
+ 
+ Read more: http://www.linhadecodigo.com.br/artigo/3706/jquery-validate-validacao-de-formularios-html.aspx#ixzz6CeQFfEWO
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -29,6 +62,10 @@
 	// Touch?
 		if (browser.mobile)
 			$body.addClass('is-touch');
+
+	// DatePicker_Action
+	
+	$('[data-toggle="datepicker"]').datepicker();
 
 	// Forms.
 		var $form = $('form');

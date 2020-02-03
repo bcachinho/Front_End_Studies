@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link  href="/assets/css/datepicker.css" rel="stylesheet">
+		<link  href="assets/datepicker/dist/datepicker.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -55,33 +55,17 @@
 								<h1>This is Phantom, a free, fully responsive site<br />
 								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-								<div class="searchdata_wrapper">
-									<div class="name_search">
+								<div class="fields" id="form_search">
+									<div class="field third">
 											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="docs-datepicker-inicial">
-												<div class="input-group">
-												  <input type="text" class="form-control docs-date" name="date" placeholder="Pick an initial date" autocomplete="off">
-												  <div class="input-group-append">
-													<button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
-													  <i class="fa fa-calendar" aria-hidden="true"></i>
-													</button>
-												  </div>
-												</div>
-												<div class="docs-datepicker-container"></div>
-											  </div>
-										<div class="docs-datepicker-final">
-												<div class="input-group">
-												  <input type="text" class="form-control docs-date" name="date" placeholder="Pick a final date" autocomplete="off">
-												  <div class="input-group-append">
-													<button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
-													  <i class="fa fa-calendar" aria-hidden="true"></i>
-													</button>
-												  </div>
-												</div>
-												<div class="docs-datepicker-container"></div>
-										</div>	  
-										<button><i class="fa fa-search" aria-hidden="true"></i></button>
+									</div>
+									<div class="field third">
+										<input data-toggle="datepicker" id="datepicker" placeholder="Data Inicial"/>
+									</div>
+									<div class="field third">
+										<input data-toggle="datepicker" id="datepicker" placeholder="Data Final" />
+									</div>	
+									<button class="buttonValidation" onclick="validation()"><i class="fa fa-search" aria-hidden="true"></i></button>
 									</div>
 							</header>
 							<section class="tiles">
@@ -92,6 +76,7 @@
 									<a href="generic.html">
 										<h2>Magna</h2>
 										<div class="content">
+											<p id="dateinfo">01/30/2010</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -103,6 +88,7 @@
 									<a href="generic.html">
 										<h2>Lorem</h2>
 										<div class="content">
+											<p id="dateinfo">12/29/2004</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -114,6 +100,7 @@
 									<a href="generic.html">
 										<h2>Feugiat</h2>
 										<div class="content">
+											<p id="dateinfo">04/12/1999</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -125,6 +112,7 @@
 									<a href="generic.html">
 										<h2>Tempus</h2>
 										<div class="content">
+											<p id="dateinfo">09/09/1981</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -136,6 +124,7 @@
 									<a href="generic.html">
 										<h2>Aliquam</h2>
 										<div class="content">
+											<p id="dateinfo">04/04/2003</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -147,6 +136,7 @@
 									<a href="generic.html">
 										<h2>Veroeros</h2>
 										<div class="content">
+											<p id="dateinfo">04/14/2013</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -158,6 +148,7 @@
 									<a href="generic.html">
 										<h2>Ipsum</h2>
 										<div class="content">
+											<p id="dateinfo">08/24/2001</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -169,6 +160,7 @@
 									<a href="generic.html">
 										<h2>Dolor</h2>
 										<div class="content">
+											<p id="dateinfo">09/25/1993</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -180,6 +172,7 @@
 									<a href="generic.html">
 										<h2>Nullam</h2>
 										<div class="content">
+											<p id="dateinfo">01/04/1981</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -191,6 +184,7 @@
 									<a href="generic.html">
 										<h2>Ultricies</h2>
 										<div class="content">
+											<p id="dateinfo">10/09/1990</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -202,6 +196,7 @@
 									<a href="generic.html">
 										<h2>Dictum</h2>
 										<div class="content">
+											<p id="dateinfo">02/02/2020</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -213,6 +208,7 @@
 									<a href="generic.html">
 										<h2>Pretium</h2>
 										<div class="content">
+											<p id="dateinfo">04/13/2019</p>
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
 									</a>
@@ -269,8 +265,9 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/datepicker/dist/datepicker.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="/assets/js/datepicker.js"></script>
+			
 
 	</body>
 </html>
