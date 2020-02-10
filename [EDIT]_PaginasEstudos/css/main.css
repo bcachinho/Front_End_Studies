@@ -62,6 +62,35 @@ table {
 /* Mixing SmallerValue*/
 /* Title */
 /* Title com Extents */
+.grid_products h1 {
+  font-family: "Lato", sans-serif;
+  color: #606060;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 340) {
+  .grid_products h1 {
+    font-size: 14px;
+  }
+}
+
+.grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  list-style-type: none;
+  color: #999999;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media (min-width: 0) and (max-width: 340) {
+  .grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+    font-size: 10px;
+  }
+}
+
 .btn {
   border: 2px solid #999999;
   text-decoration: none;
@@ -448,6 +477,79 @@ footer .wrap .col:last-child {
   height: 800px;
   margin: 0 auto;
   background-color: white;
+}
+
+.grid_products .breadcrumb {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.grid_products .breadcrumb li {
+  list-style: none;
+  display: inline-block;
+}
+
+.grid_products .breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.grid_products h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.grid_products .linkShowMore {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.grid_products .linkShowMore a {
+  text-transform: lowercase;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.grid_products .sectionProducts {
+  width: 95%;
+  height: 180px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 0;
+}
+
+.grid_products .sectionProducts .Product {
+  display: inline-block;
+  height: 100%;
+  background-color: gray;
+  width: 20%;
+  margin-right: 6.6666%;
+  font-family: "Lato", sans-serif;
+  color: #606060;
+  font-size: 14px;
+  text-align: center;
+}
+
+.grid_products .sectionProducts .Product img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_products .sectionProducts .Product h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.grid_products .sectionProducts .Product h3 {
+  margin-top: 5px;
+}
+
+.grid_products .sectionProducts div:last-child {
+  margin-right: 0;
 }
 
 .newsletter {

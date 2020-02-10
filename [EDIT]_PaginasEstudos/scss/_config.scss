@@ -35,11 +35,11 @@ $color-type-secondary:#999999;
 }
 
 %subtitle-breadcrumbs{
+    text-decoration: none;
     font-family: $secondary-font;
     list-style-type: none;
     color: $color-type-secondary;
     font-size: 14px;
-    font-style: italic;
     text-transform: uppercase;
     text-align: left;
 

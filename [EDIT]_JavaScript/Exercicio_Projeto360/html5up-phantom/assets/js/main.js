@@ -42,6 +42,19 @@
  
  Read more: http://www.linhadecodigo.com.br/artigo/3706/jquery-validate-validacao-de-formularios-html.aspx#ixzz6CeQFfEWO
 
+	 //Email.
+	 Email.send({
+		Host : "smtp.yourisp.com",
+		Username : "username",
+		Password : "password",
+		To : 'them@website.com',
+		From : $('#email').val(),
+		Subject : 'Contato do Site',
+		Body : $('#name').val() + $('#message').val(),
+	}).then(
+	  message => alert(message)
+	)
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
