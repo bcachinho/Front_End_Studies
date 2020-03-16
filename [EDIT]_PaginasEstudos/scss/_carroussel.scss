@@ -1,4 +1,5 @@
-.carroussel{
+/*
+carroussel{
     height:400px;
     width:80%;
     margin: 0 auto;
@@ -45,4 +46,22 @@
         }
     }
 }
+*/
+.pure-js-carousel {
+    overflow: hidden;
+  }
+  
+  .pure-js-carousel-list:before,
+  .pure-js-carousel-list:after {
+    content: "";
+    display: table;
+  }
+  
+  .pure-js-carousel-list:after {
+    clear: both;
+  }
+  
+  .pure-js-carousel-slide {
+    float: left;
+  }
 

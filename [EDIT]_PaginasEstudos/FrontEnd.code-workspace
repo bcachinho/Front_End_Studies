@@ -7,5 +7,7 @@
 			"path": "/Users/brunocachinho/Desktop/FRONT_END_EstudosBrunoCachinho"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FRONT_END_EstudosBrunoCachinho"
+	}
 }
