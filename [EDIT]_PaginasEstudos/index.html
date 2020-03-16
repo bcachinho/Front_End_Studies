@@ -40,8 +40,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap" rel="stylesheet">
 	<!--Links-->
 	<link rel="stylesheet" href="css/main.css">
-	<!-- JavaScript Carroussel-->
-	<script src="js/pure-js-carousel.js"></script>
 </head>
 <!--GA-->
 
@@ -243,5 +241,24 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/pure-js-carousel.js"></script>
+    <script>
+      if ('onpageshow' in window) {
+        window.onpageshow = function() {
+          init();
+        }
+      } else{
+        window.onload = function() {
+          init();
+        }
+      }
+      function init() {
+        pureJSCarousel({
+          container: '.carousel',
+          infinite : true,
+          speed    : 1000
+        });
+      }
+    </script>
 </body>
 </html>
