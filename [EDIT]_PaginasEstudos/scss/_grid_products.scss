@@ -1,6 +1,6 @@
 .grid_products{
     width: 80%;
-    height: 2800px;
+    height: 1800px;
     margin: 0 auto;
     background-color: white;
 
@@ -29,7 +29,7 @@
         @extend %maintitle-content;
         font-size: 48px;
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .linkShowMore{
@@ -47,7 +47,7 @@
 
     .sectionProducts{
         width: 95%;
-        height: 180px;
+        height: 400px;
         margin: 0 auto;
         margin-top: 50px;
         font-size: 0;
@@ -55,15 +55,21 @@
         .Product{
             display: inline-block;
             height: 100%;
-            background-color: gray;
             width: 20%;
             margin-right: 6.6666%;
+            position: relative;
+            overflow: hidden;
+            top: 50%;
+            transform: translateY(-50%);
             @include maintitle-content();
 
             img{
-                width: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
+                width: auto;
+                height: 350px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+
             }
 
             h2{

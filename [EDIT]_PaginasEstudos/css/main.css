@@ -75,7 +75,7 @@ table {
   }
 }
 
-.grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+.grid_products .breadcrumb li a, .grid_products .linkShowMore a, .carroussel p {
   text-decoration: none;
   font-family: "Playfair Display", serif;
   list-style-type: none;
@@ -86,7 +86,7 @@ table {
 }
 
 @media (min-width: 0) and (max-width: 340) {
-  .grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+  .grid_products .breadcrumb li a, .grid_products .linkShowMore a, .carroussel p {
     font-size: 10px;
   }
 }
@@ -474,7 +474,7 @@ footer .wrap .col:last-child {
 
 .grid_products {
   width: 80%;
-  height: 800px;
+  height: 1800px;
   margin: 0 auto;
   background-color: white;
 }
@@ -498,7 +498,7 @@ footer .wrap .col:last-child {
 .grid_products h1 {
   font-size: 48px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .grid_products .linkShowMore {
@@ -515,7 +515,7 @@ footer .wrap .col:last-child {
 
 .grid_products .sectionProducts {
   width: 95%;
-  height: 180px;
+  height: 400px;
   margin: 0 auto;
   margin-top: 50px;
   font-size: 0;
@@ -524,9 +524,12 @@ footer .wrap .col:last-child {
 .grid_products .sectionProducts .Product {
   display: inline-block;
   height: 100%;
-  background-color: gray;
   width: 20%;
   margin-right: 6.6666%;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "Lato", sans-serif;
   color: #606060;
   font-size: 14px;
@@ -534,9 +537,11 @@ footer .wrap .col:last-child {
 }
 
 .grid_products .sectionProducts .Product img {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: auto;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .grid_products .sectionProducts .Product h2 {
@@ -606,10 +611,17 @@ footer .wrap .col:last-child {
 }
 
 .carroussel {
-  height: 300px;
+  height: 400px;
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
+  background-color: white;
+}
+
+.carroussel p {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .carroussel .selectorsNews {

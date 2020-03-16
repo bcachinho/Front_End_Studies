@@ -1,8 +1,16 @@
 .carroussel{
-    height:300px;
+    height:400px;
     width:80%;
     margin: 0 auto;
     overflow: hidden;
+    background-color: white;
+
+    p{
+        @extend %subtitle-breadcrumbs;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
     .selectorsNews{
         height: 300px;
