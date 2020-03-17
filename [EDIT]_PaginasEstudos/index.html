@@ -200,6 +200,24 @@
 			<div>Slide 8</div>
 			<div>Slide 9</div>
 	</div>
+	<script>
+			if ('onpageshow' in window) {
+			  window.onpageshow = function() {
+				init();
+			  }
+			} else{
+			  window.onload = function() {
+				init();
+			  }
+			}
+			function init() {
+			  pureJSCarousel({
+				container: '.carousel',
+				infinite : true,
+				speed    : 1000
+			  });
+			}
+	</script>
 
 	<!-- Footer -->
 	<footer>
@@ -242,23 +260,6 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="./js/purejscarousel.js"></script>
-    <script>
-      if ('onpageshow' in window) {
-        window.onpageshow = function() {
-          init();
-        }
-      } else{
-        window.onload = function() {
-          init();
-        }
-      }
-      function init() {
-        pureJSCarousel({
-          container: '.carousel',
-          infinite : true,
-          speed    : 1000
-        });
-      }
-    </script>
+    
 </body>
 </html>
