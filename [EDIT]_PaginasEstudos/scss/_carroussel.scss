@@ -7,9 +7,18 @@
     background-color: gray;
 
     .regular{
-        width: 100%;
+        width: 90%;
+        height: 100%;
         margin: 0 auto;
-        background-color: gray;
+
+        div{
+            height: 100%;
+            width: 100%;
+            background-color: red;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
   

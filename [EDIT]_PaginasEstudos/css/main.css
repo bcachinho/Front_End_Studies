@@ -619,9 +619,15 @@ footer .wrap .col:last-child {
 }
 
 .carroussel .regular {
-  width: 100%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
-  background-color: gray;
+}
+
+.carroussel .regular div {
+  height: 100%;
+  width: 100%;
+  background-color: red;
 }
 
 body {
