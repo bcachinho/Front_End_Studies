@@ -75,7 +75,7 @@ table {
   }
 }
 
-.grid_products .breadcrumb li a, .grid_products .linkShowMore a, .carroussel p {
+.grid_products .breadcrumb li a, .grid_products .linkShowMore a {
   text-decoration: none;
   font-family: "Playfair Display", serif;
   list-style-type: none;
@@ -86,7 +86,7 @@ table {
 }
 
 @media (min-width: 0) and (max-width: 340) {
-  .grid_products .breadcrumb li a, .grid_products .linkShowMore a, .carroussel p {
+  .grid_products .breadcrumb li a, .grid_products .linkShowMore a {
     font-size: 10px;
   }
 }
@@ -615,46 +615,13 @@ footer .wrap .col:last-child {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
-  background-color: white;
-}
-
-.carroussel p {
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.carroussel .selectorsNews {
-  height: 300px;
-  width: 100%;
-  font-size: 0;
-}
-
-.carroussel .selectorsNews .arrow {
-  font-size: 15px;
-  width: 5%;
-  height: 100%;
-  line-height: 100%;
   background-color: gray;
-  display: inline-block;
-  position: relative;
 }
 
-.carroussel .selectorsNews .arrow p {
-  position: absolute;
-  text-align: center;
-  vertical-align: middle;
-  font-family: sans-serif;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.carroussel .selectorsNews .bodySelector {
-  width: 90%;
-  height: 100%;
-  background-color: darkgray;
-  display: inline-block;
+.carroussel .regular {
+  width: 80%;
+  margin: 0 auto;
+  background-color: gray;
 }
 
 body {
