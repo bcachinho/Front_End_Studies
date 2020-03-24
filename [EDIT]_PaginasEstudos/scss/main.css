@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Fonts */
+/* Colors */
+/* Mixing SmallerValue*/
+/* Title */
+/* Title com Extents */
+.grid_products h1 {
+  font-family: "Lato", sans-serif;
+  color: #606060;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 340) {
+  .grid_products h1 {
+    font-size: 14px;
+  }
+}
+
+.grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  list-style-type: none;
+  color: #999999;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media (min-width: 0) and (max-width: 340) {
+  .grid_products .breadcrumb li a, .grid_products .linkShowMore a {
+    font-size: 10px;
+  }
+}
+
+.btn {
+  border: 2px solid #999999;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 0px;
+  color: #999999;
+}
+
+.btn:hover {
+  background-color: #606060;
+}
+
+header {
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 30px;
+  overflow: auto;
+  background-color: #ffffff;
+  width: 80%;
+  font-family: "Lato", sans-serif;
+  display: block;
+  color: #606060;
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+
+header nav {
+  margin: 0 auto;
+  height: 100px;
+  border-bottom: 1px solid #999999;
+}
+
+header nav .logoEnterprise {
+  float: left;
+  width: 55px;
+  height: 55px;
+}
+
+header nav li {
+  list-style-type: none;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 14px;
+  vertical-align: top;
+  height: 55px;
+  line-height: 55px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #606060;
+}
+
+header nav .MainNav_OptionLeft li {
+  float: left;
+}
+
+header nav .MainNav_OptionRight li {
+  float: right;
+}
+
+header nav .searchPlace {
+  display: none;
+}
+
+header nav .searchPlaceOpen {
+  width: 200px;
+  line-height: 40px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+header nav .searchButton {
+  background-color: Transparent;
+  width: 40px;
+  height: 40px;
+  margin-right: -20px;
+  font-size: 20px;
+}
+
+header nav .searchButtonOpen {
+  background-color: gray;
+  color: white;
+  width: 40px;
+  line-height: 40px;
+  margin-right: -20px;
+  font-size: 20px;
+}
+
+footer {
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #606060;
+  position: relative;
+}
+
+footer .wrap {
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  color: #999999;
+  font-size: 0;
+}
+
+footer .wrap .col {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  color: gray;
+  font-size: 13px;
+  line-height: 20px;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border-left: 1px solid lightgray;
+  height: 100px;
+  padding-left: 15px;
+}
+
+footer .wrap .col a {
+  border: 1px solid darkgray;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+}
+
+footer .wrap .col a i {
+  position: absolute;
+  color: gray;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer .wrap .col li:first-child {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+footer .wrap .col:first-child {
+  border: 0px;
+  margin-left: 0px;
+}
+
+footer .wrap .col:last-child {
+  width: 20%;
+}
+
+.hero {
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #606060;
+  position: relative;
+}
+
+.hero .wrap {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  color: #999999;
+}
+
+.hero .wrap h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+
+.hero .wrap p {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  line-height: 90px;
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .hero .wrap p {
+    display: none;
+  }
+}
+
+.hero #myVideo {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.grid {
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+.grid .wrapper {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0;
+}
+
+.grid .wrapper .col {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+}
+
+.grid .wrapper .col .itemXL {
+  height: 66%;
+}
+
+.grid .wrapper .col .itemXL.first {
+  background-image: url(../imgs/img_dior_vestido01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid .wrapper .col .itemXL.second {
+  background-image: url(../imgs/img_dior_vestido02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid .wrapper .col .itemN {
+  height: 33%;
+}
+
+.grid .wrapper .col .itemN.first {
+  background-image: url(../imgs/img_dior_oculos.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.grid .wrapper .col .itemN.second {
+  background-image: url(../imgs/img_dior_bolsa01.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.grid .wrapper .col .itemN.twitter {
+  background-color: gray;
+  position: relative;
+  font-size: 13px;
+}
+
+.grid .wrapper .col .itemN.twitter article {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.grid .wrapper .col .itemN.twitter article .titleTwitter {
+  width: 100%;
+  height: 33%;
+}
+
+.grid .wrapper .col .itemN.twitter article .titleTwitter div {
+  width: 15%;
+  height: 50%;
+  border-top: 1px solid white;
+  display: inline-block;
+}
+
+.grid .wrapper .col .itemN.twitter article .titleTwitter img {
+  width: 33%;
+  display: inline-block;
+}
+
+.grid .wrapper .col .itemN.twitter article p {
+  text-align: center;
+  font-style:  italic;
+  padding: 5px 10px;
+  line-height: 18px;
+  color: white;
+}
+
+.grid .wrapper .col .itemN.twitter article a {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.grid .wrapper .col .itemN.price {
+  background-color: darkgray;
+  position: relative;
+  font-size: 20px;
+}
+
+.grid .wrapper .col .itemN.price article {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.grid .wrapper .col .itemN.price p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+.grid .wrapper .col .itemN.price p a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid .wrapper .col .itemN.price p a.priceValue {
+  font-style: italic;
+}
+
+.grid .wrapper .col .itemN.links {
+  background-color: lightgray;
+  position: relative;
+  font-size: 20px;
+}
+
+.grid .wrapper .col .itemN.links article {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.grid .wrapper .col .itemN.links img {
+  width: 10%;
+}
+
+.grid .wrapper .col .itemN.links p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+.grid .wrapper .col .itemN.links p a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid .wrapper .col .itemN.links p a.priceValue {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.grid_products {
+  width: 80%;
+  height: 1800px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.grid_products .breadcrumb {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.grid_products .breadcrumb li {
+  list-style: none;
+  display: inline-block;
+}
+
+.grid_products .breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.grid_products h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.grid_products .linkShowMore {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.grid_products .linkShowMore a {
+  text-transform: lowercase;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.grid_products .sectionProducts {
+  width: 95%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 0;
+}
+
+.grid_products .sectionProducts .Product {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  margin-right: 6.6666%;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "Lato", sans-serif;
+  color: #606060;
+  font-size: 14px;
+  text-align: center;
+}
+
+.grid_products .sectionProducts .Product img {
+  width: auto;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.grid_products .sectionProducts .Product h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.grid_products .sectionProducts .Product h3 {
+  margin-top: 5px;
+}
+
+.grid_products .sectionProducts div:last-child {
+  margin-right: 0;
+}
+
+.newsletter {
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.newsletter .wrap {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.newsletter .wrap h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.newsletter .wrap p {
+  font-family: "Playfair Display", serif;
+  color: #606060;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.newsletter .wrap .blankEmail {
+  width: 60%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.newsletter .wrap .buttonAdd {
+  width: 10%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  background-color: orange;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.carroussel {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.carroussel .regular {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carroussel .regular div {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  background-color: #ECECEC;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.carroussel {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.carroussel .regular {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carroussel .regular div {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+}
